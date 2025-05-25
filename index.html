@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dot Glasses | Vision for All</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <script
+    src="https://kit.fontawesome.com/a076d05399.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">Dot Glasses</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="#cart">
+            <i class="fas fa-shopping-cart"></i> Cart
+            <span id="cart-count" class="cart-count">0</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="hero-content">
+      <h1>Empowering Vision Globally</h1>
+      <p>Affordable, durable, and stylish glasses for everyone – especially for those in need.</p>
+      <a href="#products" class="btn-primary">Shop Now</a>
+    </div>
+  </header>
+
+  <section id="features" class="features">
+    <div class="feature">
+      <img src="C:\Users\ujeni\OneDrive\Pictures\affordable.jpg" alt="Affordable" />
+      <h3>Affordable Prices</h3>
+      <p>We provide cost-effective eyewear without compromising quality.</p>
+    </div>
+    <div class="feature">
+      <img src="C:\Users\ujeni\OneDrive\Pictures\global.jpg" alt="Global Reach" />
+      <h3>Global Impact</h3>
+      <p>Operating across continents to ensure access to vision everywhere.</p>
+    </div>
+    <div class="feature">
+      <img src="C:\Users\ujeni\OneDrive\Pictures\graphic.jpg" alt="Design" />
+      <h3>Modern Design</h3>
+      <p>Simple, smart frames built to suit any face and lifestyle.</p>
+    </div>
+  </section>
+
+  <section id="products" class="products">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      <!-- Existing Products -->
+
+      <div class="product-card">
+        <img src="C:\Users\ujeni\OneDrive\Pictures\explorer backpack.jpg" alt="Explorer Backpack" />
+        <h4>Explorer Backpack</h4>
+        <p>$10.00</p>
+        <button class="add-to-cart" data-name="Explorer Backpack">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="C:\Users\ujeni\OneDrive\Pictures\Classic Black.jpg" alt="Classic Black" />
+        <h4>Classic Black</h4>
+        <p>$20.00</p>
+        <button class="add-to-cart" data-name="Classic Black">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="C:\Users\ujeni\OneDrive\Pictures\furniture.jpg" alt="Furniture" />
+        <h4>Furniture</h4>
+        <p>$25.00</p>
+        <button class="add-to-cart" data-name="Furniture">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="C:\Users\ujeni\OneDrive\Pictures\smart gadgets.jpg" alt="Smart Gadgets" />
+        <h4>Smart Gadgets</h4>
+        <p>$30.00</p>
+        <button class="add-to-cart" data-name="Smart Gadgets">Add to Cart</button>
+      </div>
+
+      <!-- New Products -->
+      <div class="product-card">
+        <img src="C:\Users\ujeni\OneDrive\Pictures\glassess.jpg" alt="Glassess" />
+        <h4>Glassess</h4>
+        <p>$45.00</p>
+        <button class="add-to-cart" data-name="Glassess">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="C:\Users\ujeni\OneDrive\Pictures\mobil.jpg" alt="Mobiles" />
+        <h4>Mobiles</h4>
+        <p>$50.00</p>
+        <button class="add-to-cart" data-name="Mobiles">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="C:\Users\ujeni\OneDrive\Pictures\Sports.jpg" alt="Sports" />
+        <h4>Sports</h4>
+        <p>$40.00</p>
+        <button class="add-to-cart" data-name="Sports">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Dot Glasses</h2>
+    <p>
+      Dot Glasses is on a mission to end the vision crisis by making
+      eyeglasses accessible and affordable. We partner with local
+      communities, NGOs, and distributors to create a sustainable,
+      scalable impact worldwide.
+    </p>
+    <a href="#" class="btn-secondary">Learn More</a>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+      <p id="formStatus"></p>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Dot Glasses. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://facebook.com/dotglasses" target="_blank" rel="noopener"
+          >Facebook</a
+        >
+        <a href="https://twitter.com/dotglasses" target="_blank" rel="noopener"
+          >Twitter</a
+        >
+        <a href="https://instagram.com/dotglasses" target="_blank" rel="noopener"
+          >Instagram</a
+        >
+      </div>
+    </div>
+  </footer>
+  <!-- Cart Modal -->
+<div id="cartModal" class="cart-modal hidden">
+    <div class="cart-modal-content">
+      <span id="closeCart" class="close-btn">&times;</span>
+      <h2>Your Cart</h2>
+      <ul id="cartItemsList"></ul>
+    </div>
+  </div>
+  
+</body>
+
+</html>
